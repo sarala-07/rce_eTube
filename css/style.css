@@ -91,6 +91,7 @@ header h1 {
     color: red;
     font-weight: bold;
     padding-right: 8px;
+    font-size: large;
   }
 
   .video-card .views {
@@ -107,8 +108,8 @@ header h1 {
     color: #606060;
   }
 
-  .video-card .views::before {
-    content:"\25B6  ";
+  .video-card .views::after {
+    content:"  \25B6  ";
     font-size: 12px;
   }
 
