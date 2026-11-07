@@ -3,27 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>eTube | RCE</title>
+  <title>eTube | Home</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body id="top">
+<body id="top" class="home">
 
   <!-- Same header on every page -->
   <header>
     <a href="index.html"><img src="images/logo.png" alt="eTube logo" width="40"></a>
     <h1>eTube</h1>
-    
-    <!-- <style>h1 {color : green} </style> -->
     <nav>
       <a href="index.html">Home</a> |
       <a href="index.html#trending">Trending</a> |
       <a href="table-videos.html">Table Videos</a> |
       <a href="channel.html">Channel</a> |
       <a href="upload.html">Upload</a> |
-      <a href="analytics.html" target="_blank">Analytics</a>
+      <a href="analytics.html">Studio</a>
     </nav>
+    <button id="themeBtn" class="theme-btn" onclick="toggleTheme()">&#127769;Dark</button>
   </header>
-
+<!-- Left sidebar (home page only) -->
+  <aside class="sidebar">
+    <a href="index.html">Home</a>
+    <a href="index.html#trending">Trending</a>
+    <a href="table-videos.html">All videos</a>
+    <a href="channel.html">Subscriptions</a>
+    <a href="upload.html">Upload</a>
+    <a href="analytics.html">Studio</a>
+  </aside>
   <main>
     <section>
       <h2>Learn. Code. Get placed.</h2>
@@ -105,6 +112,6 @@
       </small>
     </p>
   </footer>
-
+<script src="js/app.js"></script>
 </body>
 </html>
